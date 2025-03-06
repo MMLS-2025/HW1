@@ -37,20 +37,18 @@ for t = 1:30
     x = L2 * x;
 end
 
-% 绘制比例变化图
 subplot(2, 1, 1);
 hold on;
-plot(1:30, r1, 'b', 'LineWidth', 1.5); % 第一阶段比例
-plot(1:30, r2, 'r', 'LineWidth', 1.5); % 第二阶段比例
-plot(1:30, r3, 'g', 'LineWidth', 1.5); % 第三阶段比例
-plot(1:30, r4, 'k', 'LineWidth', 1.5); % 第四阶段比例
+plot(1:30, r1, 'b', 'LineWidth', 1.5);
+plot(1:30, r2, 'r', 'LineWidth', 1.5);
+plot(1:30, r3, 'g', 'LineWidth', 1.5);
+plot(1:30, r4, 'k', 'LineWidth', 1.5);
 legend('Stage 1', 'Stage 2', 'Stage 3', 'Stage 4', 'Location', 'best');
 title('Proportion of Each Stage Over Time');
 xlabel('Time Step');
 ylabel('Proportion');
 hold off;
 
-% 绘制总种群数变化图
 subplot(2, 1, 2);
 plot(1:30, n_s, 'm', 'LineWidth', 1.5);
 title('Total Population Over Time');
