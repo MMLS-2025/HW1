@@ -42,6 +42,7 @@ end
 
 subplot(3,1,3)
 plot(1:49, lam, 1:49, sol*ones(1,49))
+grid on;
 xlabel('Time')
 ylabel('Growth Rate')
 title('The rate of population growth approaches the solution of Euler-Lotka equation')

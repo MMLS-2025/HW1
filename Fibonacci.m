@@ -10,3 +10,6 @@ for i=1:99
     r(i)=f(i+1) / f(i);
 end
 plot(1:99,r)
+xlabel("n")
+ylabel("r")
+title("n v.s. r")
